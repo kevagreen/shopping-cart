@@ -11,14 +11,16 @@ const ItemInCart = ({id, name, price, qty, updateQty}) => {
         updateQty(id, qty - 1);
         }
     }
+    
 
     return (
         <div className='CartItem'>
            <div>{name}</div> 
-           <div>${price}</div> 
-           <button onClick={addOne} >-</button>
+           <div>${price.toFixed(2)}</div> 
+           <button onClick={subtractOne} >-</button>
            <div>{qty}</div> 
-           <button onClick={subtractOne}>+</button>
+           <button onClick={addOne}>+</button>
+           <div>${price * qty}</div>
         </div>
     )
 }

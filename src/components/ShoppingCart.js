@@ -16,6 +16,10 @@ const ShoppingCart = ({initialCartItems}) => {
      setNumItems(newItems);   
     }
 
+    const [subTotal, setSubTotal] = useState(0.00);
+    const grandTotal = numItems.reduce((total, item) => (
+        total + item.qty * item.price
+     ), 0 ).toFixed(2);
    
 
     return (
@@ -26,7 +30,7 @@ const ShoppingCart = ({initialCartItems}) => {
                 <ItemInCart key={item.id} updateQty={updateQty} {...item}/>
               ))}
             </div>
-            <div className='Cart-Total'>Grand Total: </div>
+            <div className='Cart-Total'>Subtotal: {grandTotal} </div>
         </div>
     )
 }
