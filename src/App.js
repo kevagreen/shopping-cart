@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ItemInCart from './components/ItemInCart';
+import Navbar from './components/Navbar'
+import ShoppingCart from './components/ShoppingCart'
+
+//temp location for items for shopping cart
+const items = [
+  {id: 1, name: 'organic corn', price: 3.25, qty: 2},
+  {id: 2, name: 'organic rice', price: 4.00, qty: 1},
+  {id: 3,name: 'organic potato', price: 2.50, qty: 6}, 
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <ShoppingCart initialCartItems={items}/>
     </div>
   );
 }
