@@ -1,0 +1,18 @@
+.CartItem{
+    margin-top: 3mm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CartItem div{
+    width: 25%;
+}
+
+.CartItem button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 6px;
+    margin: 0 3px;
+    border: none;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../stylesheets/ItemInCart.css'
 
 const ItemInCart = ({id, name, price, qty, updateQty}) => {
     const addOne = ()=>{

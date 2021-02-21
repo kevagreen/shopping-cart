@@ -1,6 +1,7 @@
 import React from 'react'
 import ItemInCart from './ItemInCart'
 import {useState} from 'react'
+import '../stylesheets/ShoppingCart.css'
 
 const ShoppingCart = ({initialCartItems}) => {
 
