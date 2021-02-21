@@ -30,7 +30,10 @@ const ShoppingCart = ({initialCartItems}) => {
                 <ItemInCart key={item.id} updateQty={updateQty} {...item}/>
               ))}
             </div>
-            <div className='Cart-Total'>Subtotal: {grandTotal} </div>
+            <div className='Cart-Totals'>
+                <h3 className='Cart-Totals'>Subtotal: {grandTotal} </h3>
+                <h3 className='Cart-Totals'>Taxes: {} </h3>
+            </div>
         </div>
     )
 }

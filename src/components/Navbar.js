@@ -4,7 +4,7 @@ export const Navbar = () => {
     return (
         <div>
         <nav class="navbar navbar-light" style={{backgroundColor: "green"}}>
-        <a class="navbar-brand" href="#">Organic Market |</a>
+        <a class="navbar-brand" style={{color: "white"}} href="#">Organic Market |</a>
         {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> */}

@@ -16,3 +16,16 @@
     font-weight: 400; 
     padding-bottom: 1em;  
 }
+
+.ShoppingCart .Cart-Totals div{
+    padding-top: 7em;
+}
+
+.Cart-Totals h3{
+    color: rgb(39, 37, 37);
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 5em;
+}
